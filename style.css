@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    font-weight: 700; /* Полужирный шрифт для заголовка */
+    text-align: left; /* Выравнивание текста влево */
+    margin-left: 20px; /* Отступ слева для заголовка */
+}
+
+nav ul li a {
+    font-weight: 400; /* Обычный шрифт для ссылок */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    color: #333;
+    opacity: 0; /* Начальная прозрачность */
+    transform: translateY(20px); /* Сдвиг вниз */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Плавный переход */
+}
+
+section.visible {
+    opacity: 1; /* Полная непрозрачность */
+    transform: translateY(0); /* Вернуться в исходное положение */
+}
+
+footer {
+    background-color: #004e3b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.link {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link:hover {
+    color: #ffcc00; /* Цвет при наведении */
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+.language-switch {
+    position: absolute;
+    top: 20px;
+    right: 70px; /* Измените это значение для перемещения кнопки влево */
+    background-color: #004e3b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.language-switcher button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #004e3b;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.language-switcher button:hover {
+    background-color: #004e3b;
+    color: white;
+}
+
